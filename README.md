@@ -1,15 +1,6 @@
 # SkyAGI: Emerging human-behavior simulation capability in LLM
 
-https://github.com/litanlitudan/skyagi/assets/4970420/a584b364-e659-476d-a884-932b3c04df61
-
-<p align="center">
-    <a href="https://pypi.org/project/skyagi/">
-        <img alt="PyPI" src="https://img.shields.io/pypi/v/skyagi?color=gree">
-    </a>
-</p>
-
-`SkyAGI` is a python package that demonstrates LLM's emerging capability in simulating believable human behaviors.
-Specifically, `SkyAGI` implements the idea of [Generative Agents](https://arxiv.org/abs/2304.03442) and delivers a role-playing game that creates a very interesting user experience.
+SkyAGI is a python package that demonstrates LLM's emerging capability in simulating believable human behaviors.
 
 Different from previous AI based NPC systems, `SkyAGI`'s NPC generates very believable human responses.
 The interesting observations in this demo show a huge potential for rethinking game development in many aspects, such as NPC script writing.
@@ -71,17 +62,6 @@ An example agent configuration (Sheldon) looks something like this:
     "current_status": "Sheldon is at the Cheesecake Factory"
 }
 ```
-
-## Interesting observations in this demo
-
-Here is a screenshot of a live demo using The Big Bang Theory example.
-![demo](./images/demo.png)
-From the conversation, we can observe three interesting points that have not been widely seen in previous systems:
-
-1. Leonard remembered that Penny had asked him to persuade Sheldon to go for a hike, which shows the capability of some kind of memory.
-2. Leonard changed his mind after Sheldon whispered to him and even tried to convince Penny to join the scientific effort, which shows that the agents had meaningful progress in the story even without human intervention.
-3. All the responses are quite human-like. As a user, it's quite hard to tell whether it's actually an AI behind the responses.
-
 ## References
 
 1. https://arxiv.org/abs/2304.03442
