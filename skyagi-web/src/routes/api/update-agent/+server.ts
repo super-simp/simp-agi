@@ -9,18 +9,18 @@ export const config: Config = {
 export const PUT = (async ({ request, locals }: { request: Request; locals: App.Locals }) => {
     const { agent_id, user_id, agent } = await request.json();
 
-    // TODO: check user_id as well
     const { error } = await locals.supabase.from('agent')
         .update({
             name: agent.name,
             age: agent.age,
             personality: agent.personality,
             initial_status: agent.status,
-            initial_memory: agent.memory
+            initial_memory: agent.memory,
+            avatar: agent.avatar
         })
         .match({
             id: agent_id,
-            // user_id: user_id
+            user_id: user_id
         });
 
     if (error) {
